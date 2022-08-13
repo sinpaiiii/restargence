@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'star.png' %}" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/sign.css' %}" />
+  </head>
+  <body>
+    <div class="signup">
+      <div class="si">
+        <img src="{% static 'star.png'%}" alt="" />
+        <h2>Sign up</h2>
+      </div>
+      <form action="reg" method="post">
+        {% csrf_token %}
+        <label for="fname">First name</label><br />
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="lname">Last name</label><br />
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <label for="sname">Name of startup</label><br />
+        <input type="text" id="sname" name="sname" /><br /><br />
+        <label for="email">Email ID </label><br />
+        <input type="email" name="email" id="email" required /><br /><br />
+        <label for="number">Contact number </label><br />
+        <input type="tel" name="number" id="number" required /><br /><br />
+        <label for="password">Password </label><br />
+        <input
+          type="password"
+          name-="password"
+          id="password"
+          required
+        /><br /><br />
+        <label for="password2">Re-enter password </label><br />
+        <input
+          type="password2"
+          name-="password2"
+          id="password2"
+          required
+        /><br /><br />
+        <input type="submit" class="sub" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

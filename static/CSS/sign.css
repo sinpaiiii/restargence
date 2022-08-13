@@ -1,0 +1,30 @@
+.signup {
+  border: 2px solid black;
+  width: 30vw;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.si {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+}
+.si img {
+  margin-right: 80px;
+}
+.si h2 {
+  margin-top: 50px;
+  margin-right: 40px;
+}
+input {
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(194, 187, 187);
+}
+.sub {
+  width: 10vw;
+}

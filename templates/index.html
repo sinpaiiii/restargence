@@ -1,0 +1,47 @@
+{% extends 'boilerplate.html' %} {% load static %} {% block content %}
+<!-- welcome -->
+<img src="{% static 'img/welcome.svg' %}" alt="" class="wel">
+<!-- Home -->
+<section class="home" id="home">
+  <div class="homeCont">
+    <img src="{% static 'img/star_only.png' %}" alt="" class="logo" />
+    <div class="brief">
+      <h5>What we do?</h5>
+      Restargence is every aspiring entrepreneurs dream. Not because it creates a well laid path to building sustainable startups, but because it teaches sustainable growth through community involvement. By way of funds, mentoring and public forum-based contribution, every startup idea is catered to and developed to fruition! 
+
+  </div>
+</section>
+<!-- services -->
+<section class="service" id="service">
+  <h3 class="ser">Our Services</h3>
+  <div class="service1">
+    <div class="card help" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">STARTUP</h5>
+        <p class="card-text">
+          A startup struggling to find investors? Worry not, we are here to help
+          you! Sign up here with the neccessary details and we will help your
+          ideas reach investers.
+        </p>
+        <a href="#" class="btn btn-primary hehe">REGISTER</a>
+      </div>
+    </div>
+    <div class="card help" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">GUIDE</h5>
+        <p class="card-text">
+          Are you an entrepreneur or an investor looking for a promising
+          startup? The aspiring minds here need it. Browse through them and
+          support the ones that interest you.
+        </p>
+        <a href="/explore" class="btn btn-primary hehe">BROWSE</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About -->
+<section class="abt" id="abt">
+  <div class="about">gscas</div>
+</section>
+
+{% endblock %}

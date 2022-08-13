@@ -1,0 +1,126 @@
+{% extends 'boilerplate.html' %} {% load static %} {% block content %}
+
+<h1 style="text-align: center">Star your startup</h1>
+
+<h4 style="text-align: center; text-decoration: underline">
+  Our succesful customers
+</h4>
+<!-- carousel -->
+
+<section class="size">
+  <div
+    id="carouselExampleFade"
+    class="carousel slide carousel-fade"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="{% static 'img/c1.jpg' %}"
+          class="d-block w-100"
+          alt="business-deal-image"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="{% static 'img/c2.jpg' %}"
+          class="d-block w-100"
+          alt="man-walking-img"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="{% static 'img/c3.jpg' %}"
+          class="d-block w-100"
+          alt="barista-in-a-cafe-img"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleFade"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleFade"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- cards - view more, support - 3 -->
+<h4 class="avai" style="text-align: center">New startups</h4>
+<div class="container ava">
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Piggy's Eatries</h5>
+          <p class="card-text">The best food for the best people.</p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo"
+          >
+            View more
+          </button>
+          <a href="#" class="btn btn-primary">Support</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Hola Cars</h5>
+          <p class="card-text">Free car rides upto 5kms.</p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo"
+          >
+            View more
+          </button>
+          <a href="#" class="btn btn-primary">Support</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tech Frenzy</h5>
+          <p class="card-text">
+            We aim to improve the world with our technology. We live by
+            innovation and ideation
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo"
+          >
+            View more
+          </button>
+          <a href="#" class="btn btn-primary">Support</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal content -->
+
+{% endblock %}
